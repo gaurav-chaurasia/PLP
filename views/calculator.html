@@ -5,65 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../calculator app/calculator.css">
     <title>calculator</title>
-
-    <style>
-        body {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgb(245, 245, 245);
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-        .main {
-            padding: 50px;
-            width: 500px;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px 10px rgba(200, 200, 200, 0.2);
-        }
-        .main * {
-            margin: 10px auto;
-        }
-        .home {
-            position: fixed;
-            background-color: #000000;
-            bottom: -15%;
-            right: -80%;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            transition: 0.3s ease-in-out;
-            transform-origin: center;
-        }
-        /* .home__btn {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transform: translateY(50%);
-        } */
-        .home__btn svg {
-            width: 40px;
-            height: 40px;
-            position: fixed;
-            z-index: 999;
-            bottom: -15%;
-            right: -80%;
-            transform: translate(-50%, -50%);
-        }
-        .home:hover {
-            width: 83px;
-            height: 83px;
-            transition: 0.3s ease-in-out;
-            transform-origin: center;
-        }
-    </style>
 </head>
 <body>
     <div class="home">
