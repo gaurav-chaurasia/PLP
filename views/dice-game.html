@@ -203,7 +203,40 @@
                 margin-left: -255px;
             }
             /* making button move on inactive players ends */
-
+            /* home btn */
+                .home {
+                    position: fixed;
+                    background-color: #000000;
+                    bottom: 5%;
+                    right: 5%;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    transition: 0.3s ease-in-out;
+                    transform-origin: center;
+                }
+                /* .home__btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transform: translateY(50%);
+                } */
+                .home__btn svg {
+                    width: 40px;
+                    height: 40px;
+                    position: fixed;
+                    z-index: 999;
+                    bottom: 5%;
+                    right: 5%;
+                    transform: translate(-50%, -50%);
+                }
+                .home:hover {
+                    width: 83px;
+                    height: 83px;
+                    transition: 0.3s ease-in-out;
+                    transform-origin: center;
+                }
 
             .winner { font-weight: 300; color: #00bd8a; }
         </style>
@@ -211,6 +244,19 @@
     </head>
 
     <body>
+        <div class="home">
+            <a class="home__btn" href="\">
+                <svg width='512' height='512' viewBox='0 0 512 512'>
+                    <path
+                        d='M80,212V448a16,16,0,0,0,16,16h96V328a24,24,0,0,1,24-24h80a24,24,0,0,1,24,24V464h96a16,16,0,0,0,16-16V212'
+                        style='fill: #ffffff;stroke: #ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px' />
+                    <path d='M480,256,266.89,52c-5-5.28-16.69-5.34-21.78,0L32,256'
+                        style='fill: #ffffff;stroke: #ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px' />
+                    <polyline points='400 179 400 64 352 64 352 133'
+                        style='fill: #ffffff;stroke: #ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px' />
+                </svg>
+            </a>
+        </div>
         <div class="wrapper clearfix">
             <div class="player-0-panel">
                 <div class="player-name" id="name-0">Player 1</div>

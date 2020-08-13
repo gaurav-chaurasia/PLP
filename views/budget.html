@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="../budget app/css/budget_app.css">
+        <title>Budget Record</title>
+    </head>
+
+    <body>
+        <div class="home">
+            <a class="home__btn" href="\">
+                <svg width='512' height='512' viewBox='0 0 512 512'>
+                    <path d='M80,212V448a16,16,0,0,0,16,16h96V328a24,24,0,0,1,24-24h80a24,24,0,0,1,24,24V464h96a16,16,0,0,0,16-16V212'
+                        style='fill: #ffffff;stroke: #ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px' />
+                    <path d='M480,256,266.89,52c-5-5.28-16.69-5.34-21.78,0L32,256'
+                        style='fill: #ffffff;stroke: #ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px' />
+                    <polyline points='400 179 400 64 352 64 352 133'
+                        style='fill: #ffffff;stroke: #ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px' />
+                </svg>
+            </a>
+        </div>
+
+        <div class="top">
+            <div class="budget">
+                <div class="budget__title">
+                    Available Budget in <span class="budget__title--month">%Month%</span>:
+                </div>
+
+                <div class="budget__value">+ 0.00</div>
+
+                <div class="budget__income clearfix">
+                    <div class="budget__income--text">Income</div>
+                    <div class="right">
+                        <div class="budget__income--value">+ 0.00</div>
+                        <div class="budget__income--percentage">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div class="budget__expenses clearfix">
+                    <div class="budget__expenses--text">Expenses</div>
+                    <div class="right clearfix">
+                        <div class="budget__expenses--value">- 0.00</div>
+                        <div class="budget__expenses--percentage">00%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bottom">
+            <div class="add">
+                <div class="add__container">
+                    <select class="add__type">
+                        <option value="inc" selected>+</option>
+                        <option value="exp">-</option>
+                    </select>
+                    <input type="text" class="add__description" placeholder="Add description">
+                    <input type="number" class="add__value" placeholder="Value">
+                    <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+                </div>
+            </div>
+
+            <div class="container clearfix">
+                <div class="income">
+                    <h2 class="icome__title">Income</h2>
+
+                    <div class="income__list">
+
+                        
+                            <div class="item clearfix" id="income-0">
+                                <div class="item__description">Salary</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">+ 3,000.00 $</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="item clearfix" id="income-1">
+                                <div class="item__description">GSOC</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">+ 2400.00 $</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+                    </div>
+                </div>
+
+
+
+                <div class="expenses">
+                    <h2 class="expenses__title">Expenses</h2>
+
+                    <div class="expenses__list">
+
+                            <div class="item clearfix" id="expense-0">
+                                <div class="item__description">Apartment rent</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">- 500.00</div>
+                                    <div class="item__percentage">5%</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item clearfix" id="expense-1">
+                                <div class="item__description">Grocery shopping</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">- 100.00</div>
+                                    <div class="item__percentage">0.1%</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="../budget app/js/budget_app.js"></script>
+    </body>
+
+</html>

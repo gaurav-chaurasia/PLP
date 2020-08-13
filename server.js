@@ -19,6 +19,10 @@ app.get("/dice-game", function (req, res) { // calculator route
     res.sendFile(__dirname + "/views/dice-game.html");
 });
 
+app.get("/budget", function (req, res) { 
+    res.sendFile(__dirname + "/views/budget.html");
+});
+
 app.post("/calculator", function (req, res) {
     // console.log(req.body);
     let num1 = Number(req.body.num1);
