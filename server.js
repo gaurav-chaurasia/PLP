@@ -24,11 +24,30 @@ app.get("/budget", function (req, res) {
 });
 
 app.post("/calculator", function (req, res) {
-    // console.log(req.body);
+    console.log(req.body);
+    let result;
     let num1 = Number(req.body.num1);
     let num2 = Number(req.body.num2);
-    let result = num1 + num2;
-    res.send( "sum of those number is " + result);
+    let operator = req.body.operator;
+    switch (operator) {
+        case '+': 
+            result = num1 + num2;
+            break;
+        case '-':
+            result = Math.abs(num1 - num2);
+            break;
+        case '/': 
+            result = num1 / num2;
+            break;
+        case '*': 
+            result = num1 * num2;
+            break;
+        case '%': 
+            result = num1 % num2;
+            break;
+        default: result = "Invalid option choosen!!!."
+    }
+    res.send("<h1>result of '" + operator + "' on "+ num1 + " and "+ num2 +" is " + result + "</h1>");
 });
 
 app.listen(3000, function() {

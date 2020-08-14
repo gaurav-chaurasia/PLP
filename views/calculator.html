@@ -27,12 +27,12 @@
         <form action="/calculator" method="POST">
             <input class="form-control" type="text" name="num1" autofocus="true">
             <input class="form-control" type="text" name="num2">
-            <select class="form-control" id="sel1">
-                <option>addition</option>
-                <option>substraction</option>
-                <option>divition</option>
-                <option>multiplication</option>
-                <option>modulo</option>
+            <select class="form-control" id="sel1" name="operator">
+                <option value="+">addition</option>
+                <option value="-">substraction</option>
+                <option value="/">divition</option>
+                <option value="*">multiplication</option>
+                <option value="%">modulo</option>
             </select>
             <button class="btn btn-outline-dark" type="submit" name="submit">calculate </button>
         </form>
