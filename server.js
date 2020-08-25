@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static("public"));
+app.use(express.static("model"));
 
 app.get("/", function(req, res) { // homem route
     console.log(req.url);
